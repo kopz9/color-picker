@@ -5,8 +5,8 @@
   "homepage": "https://kopz9.github.io/color-picker/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "vite build && gh-pages -d dist",
+    "predeploy": "vite build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
